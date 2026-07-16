@@ -1,5 +1,6 @@
 ### Estrutura de Pastas
 
+```
 src/
 ├── assets/
 │   └── global.scss          
@@ -37,6 +38,7 @@ src/
 ├── App.tsx
 ├── index.tsx                
 └── react-app-env.d.ts
+``` 
 
 ---
 
