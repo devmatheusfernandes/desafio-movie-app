@@ -1,6 +1,4 @@
 // App.tsx
-import { useEffect } from 'react';
-import { getPopularMovies } from './services/movieService';
 import { FavoritesProvider } from './context/FavoritesContext';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import AppRoutes from './routes/AppRoutes';
