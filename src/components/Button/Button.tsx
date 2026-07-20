@@ -12,12 +12,11 @@ const Button: React.FC<ButtonProps> = ({
   className = '', 
   ...props 
 }) => {
-  // Seleciona a classe com base na variante escolhida
   const variantClass = variant === 'secondary' ? styles.secondary : styles.primary;
 
   return (
     <button 
-      className={`${styles.button} ${variantClass} ${className}`} 
+      className={`btn ${styles.button} ${variantClass} ${className}`} 
       {...props}
     >
       {children}
