@@ -8,18 +8,18 @@ import './assets/global.scss';
 
 function App() {
   // coloquei aqui para testar se a api estava funcionando antes de fazer a proxima parte
-  useEffect(() => {
-    const testarApi = async () => {
-      try {
-        const data = await getPopularMovies();
-        console.log("Dados recebidos da API:", data);
-      } catch (error) {
-        console.error("Falha na requisição:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const testarApi = async () => {
+  //     try {
+  //       const data = await getPopularMovies();
+  //       console.log("Dados recebidos da API:", data);
+  //     } catch (error) {
+  //       console.error("Falha na requisição:", error);
+  //     }
+  //   };
 
-    testarApi();
-  }, []);
+  //   testarApi();
+  // }, []);
 
   return(
     <ErrorBoundary>
