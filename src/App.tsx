@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { getPopularMovies } from './services/movieService';
 import { FavoritesProvider } from './context/FavoritesContext';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 function App() {
   // coloquei aqui para testar se a api estava funcionando antes de fazer a proxima parte
@@ -19,9 +20,11 @@ function App() {
   }, []);
 
   return(
-    <FavoritesProvider>
-      <div>MyMovies</div>
-    </FavoritesProvider>
+    <ErrorBoundary>
+      <FavoritesProvider>
+        <div>MyMovies</div>
+      </FavoritesProvider>
+    </ErrorBoundary>
   );
 }
 
