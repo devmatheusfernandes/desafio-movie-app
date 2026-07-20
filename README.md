@@ -9,8 +9,8 @@ src/
 │   │   ├── Button.tsx                                                                          OK
 │   │   └── Button.module.scss                                                                  OK
 │   ├── Header/
-│   │   ├── Header.tsx
-│   │   └── Header.module.scss
+│   │   ├── Header.tsx                                                                          OK
+│   │   └── Header.module.scss                                                                  OK
 │   |── MovieCard/
 │   |   ├── MovieCard.tsx
 │   |   └── MovieCard.module.scss

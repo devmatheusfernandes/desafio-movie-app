@@ -29,7 +29,7 @@ class ErrorBoundary extends Component<Props, State> {
     }
 
     public render() {
-        if (!this.state.hasError) {
+        if (this.state.hasError) {
             return (
                 <div style={{ padding: "2rem", textAlign: "center", color: "#e4e4e7" }}>
                 <h2>Ops! Algo deu errado.</h2>
