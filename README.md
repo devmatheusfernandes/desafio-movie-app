@@ -29,7 +29,7 @@ src/
 │   └── Favorites/
 │       └── Favorites.tsx    # Listagem dos filmes salvos       
 ├── routes/
-│   └── AppRoutes.tsx        # Configuração do React Router
+│   └── AppRoutes.tsx        # Configuração do React Router                                     OK
 ├── services/
 │   ├── api.ts               # Axios/Fetch                                                      OK
 │   └── movieService.ts      # Funções de requisição                                            OK
