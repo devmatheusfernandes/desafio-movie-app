@@ -15,26 +15,26 @@ src/
 │   |   ├── MovieCard.tsx
 │   |   └── MovieCard.module.scss
 │   └── ErrorBoundary/    
-│       ├── ErrorBoundary.tsx
+│       ├── ErrorBoundary.tsx                                                                   OK
 │       └── ErrorBoundary.module.scss
 ├── context/
-│   └── FavoritesContext.tsx # Gerencia estado de favoritos e localStorage
+│   └── FavoritesContext.tsx # Gerencia estado de favoritos e localStorage                      OK
 ├── hooks/
-│   └── useFavorites.ts      # Hook customizado para facilitar o acesso aos favoritos
+│   └── useFavorites.ts      # Hook customizado para facilitar o acesso aos favoritos           OK
 ├── pages/
 │   ├── Home/
 │   │   └── Home.tsx         # Listagem de filmes e campo de busca
 │   ├── Details/
 │   │   └── Details.tsx      # Detalhes do filme
 │   └── Favorites/
-│       └── Favorites.tsx    # Listagem dos filmes salvos
+│       └── Favorites.tsx    # Listagem dos filmes salvos       
 ├── routes/
 │   └── AppRoutes.tsx        # Configuração do React Router
 ├── services/
-│   ├── api.ts               # Axios/Fetch
-│   └── movieService.ts      # Funções de requisição
+│   ├── api.ts               # Axios/Fetch                                                      OK
+│   └── movieService.ts      # Funções de requisição                                            OK
 ├── types/
-│   └── movie.ts             # Interfaces
+│   └── movie.ts             # Interfaces                                                       OK
 ├── App.tsx
 ├── index.tsx                
 └── react-app-env.d.ts
