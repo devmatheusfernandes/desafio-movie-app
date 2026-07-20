@@ -12,20 +12,20 @@ src/
 │   │   ├── Header.tsx                                                                          OK
 │   │   └── Header.module.scss                                                                  OK
 │   |── MovieCard/
-│   |   ├── MovieCard.tsx
-│   |   └── MovieCard.module.scss
+│   |   ├── MovieCard.tsx                                                                       OK
+│   |   └── MovieCard.module.scss                                                               OK
 │   └── ErrorBoundary/    
 │       ├── ErrorBoundary.tsx                                                                   OK
-│       └── ErrorBoundary.module.scss
+│       └── ErrorBoundary.module.scss                                                           Não vou precisar               
 ├── context/
 │   └── FavoritesContext.tsx # Gerencia estado de favoritos e localStorage                      OK
 ├── hooks/
 │   └── useFavorites.ts      # Hook customizado para facilitar o acesso aos favoritos           OK
 ├── pages/
 │   ├── Home/
-│   │   └── Home.tsx         # Listagem de filmes e campo de busca
+│   │   └── Home.tsx         # Listagem de filmes e campo de busca                              OK
 │   ├── Details/
-│   │   └── Details.tsx      # Detalhes do filme
+│   │   └── Details.tsx      # Detalhes do filme                                                OK
 │   └── Favorites/
 │       └── Favorites.tsx    # Listagem dos filmes salvos       
 ├── routes/

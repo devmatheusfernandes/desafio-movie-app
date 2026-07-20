@@ -3,6 +3,7 @@ import { Movie } from '../../types/movie';
 import { useFavorites } from '../../hooks/useFavorites';
 import Button from '../Button/Button';
 import styles from './MovieCard.module.scss';
+import { getImageUrl } from '../../utils/imageUtils';
 
 interface MovieCardProps {
   movie: Movie;
@@ -13,10 +14,8 @@ export default function MovieCard({ movie }: MovieCardProps) {
   const favorite = isFavorite(movie.id);
 
   //só no caso de o filme não ter poster
-  const imageUrl = movie.poster_path
-    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-    : 'https://via.placeholder.com/500x750?text=Sem+Imagem';
-
+ const imageUrl = getImageUrl(movie.poster_path, 'w500');
+ 
   return (
     <div className={styles.movieCard}>
       <div className={styles.posterContainer}>
