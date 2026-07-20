@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`${styles.header} navbar navbar-expand-lg navbar-dark`}>
+    <header className={`${styles.header} navbar navbar-expand-lg navbar-dark sticky-top`}>
       <div className="container-fluid">
         <Link to="/" className={`${styles.logo} navbar-brand`} onClick={handleLinkClick}>
           Movies
@@ -43,7 +43,7 @@ export default function Header() {
             <li className="nav-item">
               <Link
                 to="/favorites"
-                className={`nav-link ${isActive('/favoritos') ? styles.active : ''}`}
+                className={`nav-link ${isActive('/favorites') ? styles.active : ''}`}
                 onClick={handleLinkClick}
               >
                 Favoritos
