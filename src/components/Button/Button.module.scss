@@ -1,0 +1,41 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+
+  // Variante Primária (ex: botões de ação principal, salvar)
+  &.primary {
+    background-color: #f5c542;
+    color: #0e0e10;
+
+    &:hover {
+      background-color: #e0b435;
+    }
+  }
+
+  // Variante Secundária (ex: botões de voltar, cancelar)
+  &.secondary {
+    background-color: transparent;
+    border-color: #38383f;
+    color: #e4e4e7;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: #71717a;
+    }
+  }
+
+  // Estado desativado
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

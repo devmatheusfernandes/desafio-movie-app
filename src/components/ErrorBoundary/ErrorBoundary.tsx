@@ -1,4 +1,5 @@
-import React, { Component, ErrorInfo, ReactNode } from 'react';
+import { Component, ErrorInfo, ReactNode } from 'react';
+import Button from '../Button/Button';
 
 interface Props {
     children: ReactNode;
@@ -27,15 +28,15 @@ class ErrorBoundary extends Component<Props, State> {
         console.error("Uncaught error:", error, errorInfo);
     }
 
-public render() {
-        if (this.state.hasError) {
+    public render() {
+        if (!this.state.hasError) {
             return (
                 <div style={{ padding: "2rem", textAlign: "center", color: "#e4e4e7" }}>
                 <h2>Ops! Algo deu errado.</h2>
                 <p>Tente recarregar a página ou voltar mais tarde.</p>
-                <button onClick={() => window.location.reload()}> {/*TODO: trocar pelo componente certo mais tarde*/}
+                <Button onClick={() => window.location.reload()}>
                     Recarregar Página
-                </button>
+                </Button>
                 </div>
             );
         }

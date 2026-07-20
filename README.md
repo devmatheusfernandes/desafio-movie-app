@@ -6,8 +6,8 @@ src/
 │   └── global.scss          
 ├── components/
 │   ├── Button/
-│   │   ├── Button.tsx
-│   │   └── Button.module.scss
+│   │   ├── Button.tsx                                                                          OK
+│   │   └── Button.module.scss                                                                  OK
 │   ├── Header/
 │   │   ├── Header.tsx
 │   │   └── Header.module.scss
@@ -37,7 +37,7 @@ src/
 │   └── movie.ts             # Interfaces                                                       OK
 ├── App.tsx
 ├── index.tsx                
-└── react-app-env.d.ts
+└── react-app-env.d.ts                                                                          OK
 ``` 
 
 ---
