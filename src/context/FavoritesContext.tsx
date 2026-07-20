@@ -10,8 +10,14 @@ interface FavoritesContextType {
 export const FavoritesContext = createContext<FavoritesContextType>({} as FavoritesContextType);
 
 export const FavoritesProvider = ({ children }: { children: ReactNode }) => {
-    const [favorites, setFavorites] = useState<Movie[]>([]);
-
+    
+    // ele vai iniciar buscando direto do localstorage, assim ele nao pisca vazio e depois aparece favoritado
+    // colocamos para corrigir porque como o estado aparecia ja como vazio o useeffect nao renderizava depois
+    const [favorites, setFavorites] = useState<Movie[]>(() => {
+        const stored = localStorage.getItem('favorites');
+        return stored ? JSON.parse(stored) : [];
+    });
+    
     // Carrega os dados do localStorage ao iniciar
     useEffect(() => {
         const stored = localStorage.getItem('favorites');
